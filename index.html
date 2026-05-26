@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <div class="nav-logo">Adike Sri Vathsankitha</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div>
+      <div class="hero-label">Portfolio</div>
+      <h1>Adike Sri Vathsankitha</h1>
+      <p class="hero-desc">
+        Motivated Computer Science Engineering student with a strong interest in Java Full Stack Development, seeking an
+        opportunity to apply academic knowledge and improve practical skills in software development. Eager to learn new
+        technologies, work on real-world projects, and grow as a developer in a professional environment.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Internships</span>
+      </div>
+    </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-bg"></div>
+        <div class="hero-avatar-accent"></div>
+        <div class="avatar-initials">PICTURE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════ -->
+  <section id="education">
+    <div class="section-header reveal">
+      <span class="section-num">02 /</span>
+      <h2>My <em>Education</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-year">2023 — 2027</div>
+        <div class="edu-degree">B-Tech</div>
+        <div class="edu-school">MRECW</div>
+        <span class="edu-gpa">CGPA: 9.05</span>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2021 — 2023</div>
+        <div class="edu-degree">MPC</div>
+        <div class="edu-school">Sri Chaitanya Juniour Kalasala</div>
+        <span class="edu-gpa">Percentage: 93.4%</span>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2020</div>
+        <div class="edu-degree">SSC</div>
+        <div class="edu-school">SPS High School</div>
+        <span class="edu-gpa">GPA:10.0</span>
+      </div>
+
+    </div>
+
+    <div class="skills-row reveal">
+      <span class="skill-chip">HTML / CSS</span>
+      <span class="skill-chip">JavaScript</span>
+      <span class="skill-chip">TypeScript</span>
+      <span class="skill-chip">React</span>
+      <span class="skill-chip">Java</span>
+      <span class="skill-chip">Node.js</span>
+      <span class="skill-chip">SQL</span>
+      <span class="skill-chip">MongoDB</span>
+      <span class="skill-chip">UI/UX</span>
+      <span class="skill-chip">Figma</span>
+      <span class="skill-chip">Git</span>
+      <span class="skill-chip">DSA</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03 /</span>
+      <h2><em>Projects</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid reveal">
+      <!-- Featured -->
+      <div class="project-card featured">
+        <span class="featured-badge"></span>
+        <div class="project-num">001</div>
+        <div class="project-title">Real-Time Blood Donor Alert System.</div>
+        <div class="project-desc">
+          Real-Time Blood Donor Alert System is a smart web/mobile-based application designed to connect blood donors
+          with patients or hospitals during emergencies. The system helps users quickly find nearby donors based on
+          blood group and location, and instantly sends alerts through SMS, email, or app notifications.</div>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">OpenAI API</span>
+          <span class="project-tag">Java </span>
+          <span class="project-tag">Firebase</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">002</div>
+        <div class="project-title">Text to image generation using GAN algorithm.</div>
+        <div class="project-desc">Text-to-Image Generation using GAN Algorithm is an AI-based project that converts
+          textual descriptions into realistic images using Generative Adversarial Networks (GANs). The system
+          understands the input text and generates corresponding images automatically with the help of deep learning
+          models.</div>
+        <div class="project-tags">
+          <span class="project-tag">GAN</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">003</div>
+        <div class="project-title">2d image to 3d Models.
+        </div>
+        <div class="project-desc">2D Image to 3D Model Generation is an AI and computer vision-based project that
+          converts normal 2D images into realistic 3D models. The system analyzes image depth, shape, texture, and
+          object structure to create a 3D representation that can be used in gaming, animation, AR/VR, and product
+          design.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Open CV</span>
+          <span class="project-tag">TensorFlow</span>
+        </div>
+
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">004</div>
+        <div class="project-title">Cyberbullying detection framework.</div>
+        <div class="project-desc">Cyberbullying Detection Framework is an AI and machine learning-based project designed
+          to identify and prevent cyberbullying activities on social media and online platforms. The system analyzes
+          text messages, comments, and posts to detect harmful, abusive, or offensive language in real time.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">ML</span>
+          <span class="project-tag">NLP</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">005</div>
+        <div class="project-title">AI text summarization and Quiz generation</div>
+        <div class="project-desc">AI Text Summarization and Quiz Generation is an AI-powered project that automatically
+          summarizes lengthy text content and generates quizzes based on the important information. The system uses
+          Natural Language Processing (NLP) and machine learning techniques to improve learning, save time, and support
+          smart education platforms.</div>
+        <div class="project-tags">
+          <span class="project-tag">OpenAI</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLTK/SpaCy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-num">04 /</span>
+      <h2>Let's <em>Connect</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-layout">
+      <div class="reveal">
+        <p class="contact-text">
+          I'm always open to discussing new opportunities, creative collaborations,
+          or just a good conversation about design and technology.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:alex@example.com" class="contact-link">
+            <div class="contact-link-icon">✉</div>
+            asmvankitha@gmail.com
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            https://github.com/vathsankitha
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            https://www.linkedin.com/in/adike-sri-vathsankitha-606390322/
+          </a>
+          <a href="C:\Users\Vathsankitha\OneDrive\Desktop\resume.pdf" class="contact-link">
+            <div class="contact-link-icon">↗</div>
+            Resume / CV
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="ADIKE SRI VATHSANKITHA" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="asmvankitha@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit(this)">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <span>© 2023 ADIKE SRI VATHSANKITHA</span>
+    <span>Designed & Built with ♥</span>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      ring.style.left = e.clientX + 'px';
+      ring.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width = '54px'; ring.style.height = '54px'; ring.style.opacity = '0.8';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width = '36px'; ring.style.height = '36px'; ring.style.opacity = '0.5';
+      });
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('show');
+    });
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('show');
+    }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Form submit feedback
+    function handleSubmit(btn) {
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = 'var(--accent2)';
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = 'var(--accent)';
+      }, 3000);
+    }
+  </script>
+</body>
+
+</html>
